@@ -14,10 +14,12 @@
 */
 var mobs =[];
 function modTick () {
+  for(var i in mobs)
 var ent = mobs[i];
 if(Entity.getEntityTypeId(ent)==33) {
 Entity.setVelX(ent,Entity.getVelX(ent)/100*130);
 Entity.setVelZ(ent,Entity.getVelZ(ent)/100*130);
+}
 }
 }
 function entityAddedHook(e) {
