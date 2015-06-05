@@ -1,0 +1,9 @@
+function attackHook(a,v) {
+  if(a == getPlayerEnt()) {
+    Player.minusHealth(1);
+  }
+}
+
+Player.minusHealth = function(health) {
+  Entity.setHealth(getPlayerEnt(),Player.getHealth()- health)
+}
