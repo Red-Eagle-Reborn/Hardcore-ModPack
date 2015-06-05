@@ -1,0 +1,2 @@
+# Hardcore-ModPack
+Hardcore ModPack
