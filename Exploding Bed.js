@@ -17,7 +17,9 @@ function useItem(x,y,z,i,b,s) {
 if(b==26) {
 var rnd = Math.floor(Math.random()*100);
 if(rnd<=10) {
+  if(Level.getTime()>=14000) {
 explode(x,y,z,2.5);
+}
 }
 }
 }
