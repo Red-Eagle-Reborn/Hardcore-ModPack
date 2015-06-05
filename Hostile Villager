@@ -1,0 +1,20 @@
+var zmfi = [];
+function attackHook(a,v) {
+if(a==getPlayerEnt()) {
+if(Entity.getEntityType(v)==15) {
+var copy = Level.spawnMob(Entity.getX(v)+0.5,Entity.getY(v),Entity.getZ(v),32,Entity.getMobSkin(v));
+Entity.setRenderType(copy,11);
+Entity.setHealth(copy,Entity.getHealth(v));
+zmfi.push([copy,Entity.getHealth(copy)]);
+Entity.remove(v);
+}
+}
+}
+
+function modTick() {
+if(zmfi.length!=0) {
+for(var i=0;i<zmfi.length;i++) {
+Entity.setFireTicks(zmfi[0][i],0);
+}
+}
+}
