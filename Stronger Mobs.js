@@ -13,5 +13,12 @@
   By Team Red Eagle.
 */
 function entityAddedHook(e) {
-Entity.setHealth(e,Entity.getHealth(e)*1.5);
+  Entity.setHealth(e,Entity.getHealth(e)*1.5);
+}
+function attackHook(a,v) {
+  if(Entity.getHealth(v)-2>0) {
+  Entity.setHealth(v,Math.round(Entity.getHealth(v)-2));
+  } else {
+    Entity.setHealth(v,1);
+  }
 }
