@@ -12,3 +12,35 @@
   
   By Team Red Eagle.
 */
+
+function entityAddedHook(e) {
+  if(rnd == 1 || rnd == 6 || rnd == 17 || rnd == 0 || rnd == 11) {
+    if(Entity.getEntityTypeId(e) == 32) {
+      Level.spawnMob(Entity.getX(e),Entity.getY(e),Entity.getZ(e),32);
+    }
+    if(Entity.getEntityTypeId(e) == 33) {
+      Level.spawnMob(Entity.getX(e),Entity.getY(e),Entity.getZ(e),33);
+    }
+    if(Entity.getEntityTypeId(e) == 34) {
+      Level.spawnMob(Entity.getX(e),Entity.getY(e),Entity.getZ(e),34);
+    }
+    if(Entity.getEntityTypeId(e) == 35) {
+      Level.spawnMob(Entity.getX(e),Entity.getY(e),Entity.getZ(e),35);
+    }
+    if(Entity.getEntityTypeId(e) == 36) {
+      Level.spawnMob(Entity.getX(e),Entity.getY(e),Entity.getZ(e),36);
+    }
+    if(Entity.getEntityTypeId(e) == 37) {
+      Level.spawnMob(Entity.getX(e),Entity.getY(e),Entity.getZ(e),37);
+    }
+    if(Entity.getEntityTypeId(e) == 38) {
+      Level.spawnMob(Entity.getX(e),Entity.getY(e),Entity.getZ(e),38);
+    }
+    if(Entity.getEntityTypeId(e) == 39) {
+      Level.spawnMob(Entity.getX(e),Entity.getY(e),Entity.getZ(e),39);
+    }
+    if(Entity.getEntityTypeId(e) == 40) {
+      Level.spawnMob(Entity.getX(e),Entity.getY(e),Entity.getZ(e),40);
+    }
+  }
+}
