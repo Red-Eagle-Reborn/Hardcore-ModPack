@@ -1,3 +1,18 @@
+/*
+                    Red Eagle General License
+                       Version 3, 05/06/2015
+                       
+  You Are Not Allowed To Copying or Using Our Code Without Our Permission.
+  You Are Allowed To Copying or Using Our Code If You Are Have A Permisson From Leader Or Mods Creator.
+  Don't Claim Our Mods To Be Yours.
+  Don't Moditified Out Mods To YOur Version.
+  
+  Mod Creator : <creatorName>
+  Mod Release Date : <releaseDate/Month/Years>
+  
+  By Team Red Eagle.
+*/
+
 function attackHook(a,v) {
   if(Entity.getEntityTypeId(a) == 80 && v == getPlayerEnt()) {
     var rnd = Math.floor(Math.random()*(20));
