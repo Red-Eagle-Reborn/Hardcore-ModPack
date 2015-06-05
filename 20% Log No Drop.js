@@ -17,7 +17,7 @@
 function destroyBlock(x,y,z,side) {
 	var bId = getTile(x,y,z);
 	var r = Math.random(Math.random()*(100)+1);
-	if(bIď == 17 && r < 21) {
+	if(bId == 17 && r < 21) {
 		preventDefault();
 		Level.dropItem(x,y,z,false);
 	}
