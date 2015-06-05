@@ -7,8 +7,8 @@
   Don't Claim Our Mods To Be Yours.
   Don't Moditified Out Mods To YOur Version.
   
-  Mod Creator : <creatorName>
-  Mod Release Date : <releaseDate/Month/Years>
+  Mod Creator : respectZ
+  Mod Release Date : 5 June 2015
   
   By Team Red Eagle.
 */
