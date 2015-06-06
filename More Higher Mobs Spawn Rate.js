@@ -12,8 +12,8 @@
   
   By Team Red Eagle.
 */
-var rnd = Math.floor(Math.random()*30);
 function entityAddedHook(e) {
+  var rnd = Math.floor(Math.random()*30);
   if(rnd == 1 || rnd == 6 || rnd == 17 || rnd == 0 || rnd == 11) {
     if(Entity.getEntityTypeId(e) == 32) {
       Level.spawnMob(Entity.getX(e),Entity.getY(e),Entity.getZ(e),32);
