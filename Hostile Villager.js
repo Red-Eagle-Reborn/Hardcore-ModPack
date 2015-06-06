@@ -16,8 +16,8 @@ var zm = [];
 function entityAddedHook(e) {
 if(Entity.getEntityTypeId(e)==15) {
 var copying = Level.spawnMob(Entity.getX(e)+0.5,Entity.getY(e),Entity.getZ(e)+0.5,32,Entity.getMobSkin(e));
-Entity.setRenderType(e,11);
-Entity.setHealth(e,Entity.getHealth(e));
+Entity.setRenderType(copying,11);
+Entity.setHealth(copying,Entity.getHealth(e));
 zm.push([copying,Entity.getHealth(e)]);
 }
 }
