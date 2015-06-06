@@ -12,17 +12,8 @@
   
   By Team Red Eagle.
 */
-
-// This Mods make creeper get super knockback, if you know some code that don't make creeper get a super knockback,please tell us
-
-function modTick () {
-  var all = Entity.getAll();
-  for(var i in all) {
-    var ent = all[i];
-    if(Entity.getEntityTypeId(ent)==33) {
-      Entity.setVelX(ent,Entity.getVelX(ent)/100*130);
-      Entity.setVelZ(ent,Entity.getVelZ(ent)/100*130);
-    }
-  }
+function entityAddedHook(e) {
+if(Entity.getEntityTypeId(e)==33) {
+Entity.addEffect(e,MobEffect.movementSpeed,100*100*100,2,false,false);
 }
-
+}
