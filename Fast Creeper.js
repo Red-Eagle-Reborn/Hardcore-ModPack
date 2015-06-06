@@ -12,15 +12,15 @@
   
   By Team Red Eagle.
 */
-var mobs =[];
+
 function modTick () {
-  for(var i in mobs)
-var ent = mobs[i];
+var all = Entity.getAll();
+for(var i in all) {
+  var ent = all[i];
 if(Entity.getEntityTypeId(ent)==33) {
 Entity.setVelX(ent,Entity.getVelX(ent)/100*130);
 Entity.setVelZ(ent,Entity.getVelZ(ent)/100*130);
 }
 }
-function entityAddedHook(e) {
-  mobs.push(e)
 }
+
