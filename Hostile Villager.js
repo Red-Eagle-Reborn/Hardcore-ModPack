@@ -25,7 +25,7 @@ function entityAddedHook(e) {
 function modTick () {
   if(zm.length!=0) {
     for(var i =0;i<zm.length;i++) {
-      Entity.setFireTicks(zm[i][0],0);
+      Entity.setFireTicks(zm[i][0],2);
     }
   }
 }
