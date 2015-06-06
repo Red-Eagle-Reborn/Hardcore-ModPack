@@ -77,7 +77,7 @@ function eatHook(foodId){
     var rnd = Math.floor(Math.random()*(50));
     if(foodId==319 || foodId == 363 || foodId == 365){ 
       if(rnd == 1 || rnd == 7 || rnd == 22 || rnd == 18 || rnd == 8 || rnd == 10 || rnd == 15 || rnd == 11 || rnd == 12 || rnd == 5) {
-        Entity.addEffect(getPlayerEnt(), MobEffect.poison, 15*20, 1, false, true);
+        Entity.addEffect(getPlayerEnt(), MobEffect.poison, 15*20, 0, false, true);
       }
     }
 }
