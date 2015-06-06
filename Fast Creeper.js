@@ -13,6 +13,8 @@
   By Team Red Eagle.
 */
 
+// This Mods make creeper get super knockback, if you know some code that don't make creeper get a super knockback,please tell us
+
 function modTick () {
   var all = Entity.getAll();
   for(var i in all) {
