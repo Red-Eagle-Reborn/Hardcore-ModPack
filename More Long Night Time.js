@@ -16,10 +16,10 @@
 var renight = false;
 
 function modTick() {
-  if(Level.getTime == 14000) {
+  if(Level.getTime() == 14000) {
     var renight = true;
   }
-  if(Level.getTime == 22000 && renight == true) {
+  if(Level.getTime() == 22000 && renight == true) {
     Level.setTime(14001);
     renight = false;
   }
