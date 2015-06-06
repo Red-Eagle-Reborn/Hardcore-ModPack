@@ -13,26 +13,13 @@
   By Team Red Eagle.
 */
 
-var hitted = false; 
-
-function attackHook(a,v) {
-  if(Entity.getEntityTypeId(v)==33) {
-    hitted = true;
-  }
-}
-
 function modTick () {
   var all = Entity.getAll();
   for(var i in all) {
     var ent = all[i];
-    if(Entity.getEntityTypeId(ent)==33 && hitted == false) {
+    if(Entity.getEntityTypeId(ent)==33) {
       Entity.setVelX(ent,Entity.getVelX(ent)/100*130);
       Entity.setVelZ(ent,Entity.getVelZ(ent)/100*130);
-    }
-    if(Entity.getEntityTypeId(ent)==33 && hitted == true) {
-      Entity.setVelX(ent,Entity.getVelX(ent)/130*100);
-      Entity.setVelZ(ent,Entity.getVelZ(ent)/130*100);
-      hitted = false;
     }
   }
 }
