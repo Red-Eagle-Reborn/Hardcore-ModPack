@@ -21,7 +21,6 @@ Entity.setVelX(ent,Entity.getVelX(ent)/100*130);
 Entity.setVelZ(ent,Entity.getVelZ(ent)/100*130);
 }
 }
-}
 function entityAddedHook(e) {
   mobs.push(e)
 }
