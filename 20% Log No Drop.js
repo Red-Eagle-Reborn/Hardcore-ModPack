@@ -19,6 +19,6 @@ function destroyBlock(x,y,z,side) {
 	var r = Math.random(Math.random()*(100)+1);
 	if(bId == 17 && r < 21) {
 		preventDefault();
-		Level.dropItem(x,y,z,false);
+		Level.destroyBlock(x,y,z,false);
 	}
 }
